@@ -31,7 +31,7 @@ def pres_data_parser(data):
     """
     # Convert the data to 20-bits
     pres = ((data[1] * 65536) + (data[2] * 256) + (data[3] & 0xF0)) / 16
-    pressure = (pres / 4.0) / 1000.0
+    pressure = (pres / 4.0) / 1.0
     return (pres,pressure)
 
 
